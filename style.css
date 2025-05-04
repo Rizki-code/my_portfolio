@@ -1,0 +1,67 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.hero {
+  padding: 60px 20px;
+  background-image: url('asset/bg.jpeg');
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero h3 {
+  font-size: 2.5rem;
+  color: #60B5FF;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.btn-group .btn {
+  margin-right: 10px;
+  border-radius: 30px;
+  background-color: #60b5ff;
+  font-weight: bold;
+}
+
+.text-content {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .text-content {
+    text-align: center;
+  }
+
+  .hero h3 {
+    font-size: 2rem;
+  }
+  .responsive-img {
+  	margin-top: 25px;
+  	padding-right:40px;
+  	border-radius: 180px;
+  }
+}
+
+
+/* Fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
